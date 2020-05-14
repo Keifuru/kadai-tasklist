@@ -5,7 +5,7 @@ class TasksController < ApplicationController
   end
 
   def show
-    set_task
+    @task= Task.find(params[:id])
   end
 
   def new
@@ -25,11 +25,11 @@ class TasksController < ApplicationController
   end
 
   def edit
-    set_task
+    @task= Task.find(params[:id])
   end
 
   def update
-    set_task
+    @task= Task.find(params[:id])
     if @task.update(task_params)
       flash[:success] = 'Task が正常送信にされました'
       redirect_to @task
