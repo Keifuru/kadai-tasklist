@@ -16,7 +16,8 @@ production:
   database: tasklist_production
   username: root
   password: <%= ENV['TASKLIST_DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
+  host: localhost
+
 
 development:
   <<: *default
