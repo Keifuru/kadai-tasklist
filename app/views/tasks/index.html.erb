@@ -1,10 +1,10 @@
-<h1>タスク 一覧</h1>
+<h1>業務一覧</h1>
 
 <ul>
   <% @tasks.each do |task| %>
     <li><%= link_to task.id, task %> : <%= task.status %>  &gt; <%= task.content %></li>
   <% end %>
 </ul>
-<%= paginate @task %>
+<%= paginate @tasks %>
 
-<%= link_to '新規作業を入力する', new_task_path %>
+<%= link_to '新規登録する', new_task_path %>
