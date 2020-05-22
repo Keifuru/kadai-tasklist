@@ -1,5 +1,8 @@
-<h1>新規入力</h1>
+<% content_for :title do %>
+業務管理システム　｜　新規登録
+<% end %>
+
+<h1>新規登録</h1>
 
 <%= render 'form', task: @task %>
 
-<%= link_to '一覧に戻る', tasks_path %>
