@@ -1,5 +1,5 @@
 <% content_for :title do %>
-タスク管理システム　｜　# <%= @task.id %> 詳細画面
+タスク管理　｜　# <%= @task.id %> 詳細画面
 <% end %>
 
 <h1>id: <%= @task.id %> のタスク内容</h1>
@@ -10,11 +10,11 @@
     <td><%= @task.id %></td>
   </tr>
   <tr>
-    <th>タスク名</th>
+    <th>ステータス</th>
     <td><%= @task.status %></td>
   </tr>
   <tr>
-    <th>業務内容</th>
+    <th>内容</th>
     <td><%= @task.content %></td>
   </tr>
 </table>
