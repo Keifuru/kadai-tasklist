@@ -1,8 +1,8 @@
 <% content_for :title do %>
-業務管理システム　｜　# <%= @task.id %> 詳細画面
+タスク管理システム　｜　# <%= @task.id %> 詳細画面
 <% end %>
 
-<h1>id: <%= @task.id %> の業務内容</h1>
+<h1>id: <%= @task.id %> のタスク内容</h1>
 
 <table class="table table-bordered">
   <tr>
@@ -10,7 +10,7 @@
     <td><%= @task.id %></td>
   </tr>
   <tr>
-    <th>業務名</th>
+    <th>タスク名</th>
     <td><%= @task.status %></td>
   </tr>
   <tr>
