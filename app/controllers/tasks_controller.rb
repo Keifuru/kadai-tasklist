@@ -47,10 +47,7 @@ class TasksController < ApplicationController
   end
   
   private
-  
-  def set_task
-    @task= Task.find(params[:id])
-  end
+
   
   # Strong Parameter
   def task_params
